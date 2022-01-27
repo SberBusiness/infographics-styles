@@ -16,7 +16,7 @@ const {
 /**
  * Создаём package.json для публикуемой библиотеки.
  */
-fs.writeFileSync(path.resolve(__dirname, '../dist/' + name + '/package.json'), JSON.stringify({
+fs.writeFileSync(path.resolve(__dirname, '../dist/package.json'), JSON.stringify({
     name,
     version,
     description,
