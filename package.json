@@ -6,7 +6,7 @@
   "description": "Библиотека стилей инфографики СберБизнес",
   "scripts": {
     "generateDts": "tsc",
-    "build": "npm install && node ./scripts/colors.js && node ./scripts/gradients.js && node ./scripts/copy.js && npm run generateDts",
+    "build": "node ./scripts/colors.js && node ./scripts/gradients.js && node ./scripts/copy.js && npm run generateDts",
     "publish": "npm run build && npm publish --access public ./dist"
   },
   "repository": {
@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/SberBusiness/infographics-styles#readme",
   "devDependencies": {
-    "copy": "^0.3.2",
-    "typescript": "^4.5.5"
+    "typescript": "4.5.5"
   }
 }

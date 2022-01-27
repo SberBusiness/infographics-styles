@@ -1,16 +1,9 @@
-const copy = require('copy');
+const fs = require('fs');
 const path = require('path');
 const distFolderPath = path.resolve(__dirname, '../dist');
 
-const copyCallback = (message) => (err) => {
-    if (err) {
-        throw new Error(err);
-    }
-    console.log(message);
-};
+fs.copyFileSync(path.resolve(__dirname, '../LICENSE.txt'), path.resolve(distFolderPath, 'LICENSE.txt'));
 
-copy(path.resolve(__dirname, '../LICENSE.txt'), distFolderPath, {}, copyCallback('Успешно скопирован файл лицензии'));
+fs.copyFileSync(path.resolve(__dirname, '../package.json'), path.resolve(distFolderPath, 'package.json'));
 
-copy(path.resolve(__dirname, '../package.json'), distFolderPath, { flatten: true }, copyCallback('Успешно скопирован package.json'));
-
-copy(path.resolve(__dirname, '../README.md'), distFolderPath, {}, copyCallback('Успешно скопирован файл README'));
+fs.copyFileSync(path.resolve(__dirname, '../README.md'), path.resolve(distFolderPath, 'README.md'));
