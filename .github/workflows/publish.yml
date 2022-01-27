@@ -24,5 +24,5 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: out
-          path: out/
+          name: dist
+          path: dist/
