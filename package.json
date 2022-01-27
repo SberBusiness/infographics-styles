@@ -5,7 +5,7 @@
   "license": "Sber Public License at-nc-sa v.2",
   "description": "Библиотека стилей инфографики СберБизнес",
   "scripts": {
-    "build": "node ./scripts/colors.js && node ./scripts/gradients.js",
+    "build": "node ./scripts/colors.js && node ./scripts/gradients.js && node ./scripts/copyPackage.js",
     "publish": "npm run build && npm publish --access public ./dist"
   },
   "repository": {
