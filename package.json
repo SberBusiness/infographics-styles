@@ -6,7 +6,7 @@
   "description": "Библиотека стилей инфографики СберБизнес",
   "scripts": {
     "generateDts": "tsc",
-    "build": "node ./scripts/colors.js && node ./scripts/gradients.js && node ./scripts/copy.js && npm run generateDts",
+    "build": "npm install && node ./scripts/colors.js && node ./scripts/gradients.js && node ./scripts/copy.js && npm run generateDts",
     "publish": "npm run build && npm publish --access public ./dist"
   },
   "repository": {
