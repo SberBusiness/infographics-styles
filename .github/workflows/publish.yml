@@ -22,3 +22,7 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+      - uses: actions/upload-artifact@v2
+        with:
+          name: dist
+          path: dist/
