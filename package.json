@@ -1,12 +1,12 @@
 {
   "name": "@sberbusiness/infographics-styles",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "author": "СберБизнес",
   "license": "Sber Public License at-nc-sa v.2",
   "description": "Библиотека стилей инфографики СберБизнес",
   "scripts": {
     "generateDts": "tsc",
-    "build": "node ./scripts/colors.js && node ./scripts/gradients.js && node ./scripts/copy.js && npm run generateDts",
+    "build": "node ./scripts/colors.js && node ./scripts/gradients.js && npm run generateDts && node ./scripts/copy.js",
     "publish": "npm run build && npm publish --access public ./dist"
   },
   "repository": {
